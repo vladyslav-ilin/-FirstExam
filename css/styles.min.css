@@ -135,7 +135,7 @@ body {
 }
 
 .form__text:hover {
-  background: rgba(81, 116, 253, 0.8);
+  background: rgba(81, 116, 253, 0.9);
 }
 
 .form__text:hover::-webkit-input-placeholder {
