@@ -129,7 +129,7 @@ body {
 }
 
 .form__text:focus {
-  background: rgba(81, 116, 253, 0.8);
+  background: var(--bgr);
   color: #fff;
   font-weight: 300;
 }

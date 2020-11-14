@@ -14,7 +14,7 @@
       overflow: hidden;
       position: relative;
       &:focus{
-         background: rgba(81,116,253,.8);
+         background: var(--bgr);
          color: #fff;
          font-weight: 300;
       }
