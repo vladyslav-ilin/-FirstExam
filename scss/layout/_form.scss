@@ -15,9 +15,14 @@
       position: relative;
       &:focus{
          background: rgba(81,116,253,.8);
+         color: #fff;
+         font-weight: 300;
       }
       &:hover{
          background: rgba(81,116,253,.8);
+         &::placeholder{
+            color: #fff;
+         }
       }
       &::placeholder{
          font: 300 14px $font;

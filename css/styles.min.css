@@ -130,10 +130,28 @@ body {
 
 .form__text:focus {
   background: rgba(81, 116, 253, 0.8);
+  color: #fff;
+  font-weight: 300;
 }
 
 .form__text:hover {
   background: rgba(81, 116, 253, 0.8);
+}
+
+.form__text:hover::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form__text:hover:-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__text:hover::-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__text:hover::placeholder {
+  color: #fff;
 }
 
 .form__text::-webkit-input-placeholder {
