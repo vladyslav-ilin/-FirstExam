@@ -1,0 +1,21 @@
+.grand{
+   min-height: 100vh;
+   padding: 46vh 0 10vh 0;
+   background: url('../images/spain-2.jpg') no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+   &__content{
+      display: flex;
+      justify-content: flex-end;
+   }
+   &__wrapper{
+      padding: 50px 50px 50px 30px;
+      position: relative;
+      background: rgba(35,35,35,.9);
+   }
+   &__subtitle{
+      font-size: 20px;
+      letter-spacing: 1.5px;
+      margin-bottom: 25px;
+   }
+}

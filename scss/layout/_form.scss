@@ -1,0 +1,55 @@
+.form{
+   @include size(100%, 60px);
+   display: flex;
+   justify-content: center;
+   margin-bottom: 115px;
+   &__text{
+      @include size(calc(56% - 150px), 100%);
+      text-align: center;
+      padding: 0 15px;
+      font-family: $font;
+      letter-spacing: 1.6px;
+      border: 2px solid #fff;
+      transition: all .3s ease;
+      overflow: hidden;
+      position: relative;
+      &:focus{
+         background: rgba(81,116,253,.8);
+      }
+      &:hover{
+         background: rgba(81,116,253,.8);
+      }
+      &::placeholder{
+         font: 300 14px $font;
+         color: #999999;
+         letter-spacing: 2.8px;
+      }
+   }
+   &__btn{
+      border: 2px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-basis: 150px;
+      background: var(--bgr);
+      font: 400 14px $font-title;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      position: relative;
+      color: var(--color);
+      cursor: pointer;
+      transition: all .3s ease;
+      &:hover{
+         padding-left: 30px;
+         .form__btn--search{
+            opacity: 0;
+         }
+      }
+      &--search{
+         font-size: 22px;
+         margin-left: 15px;
+         opacity: 1;
+         transition: all .3s ease;
+      }
+   }
+}

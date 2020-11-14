@@ -1,0 +1,43 @@
+.arrow {
+   &__text {
+      font-size: 14px;
+      letter-spacing: 2.8px;
+   }
+   &__scroll {
+      text-decoration: none;
+      color: var(--color);
+      display: inline-block;
+      &:hover{
+            animation: animationFrames linear 1s;
+            animation-iteration-count: 1;
+            transform-origin: 50% 50%;
+      }
+      &--down {
+         font-size: 28px;
+      }
+   }
+}
+
+ @keyframes animationFrames{
+   0% {
+     transform:  translate(-1px,0px)  ;
+   }
+   15% {
+     transform:  translate(-1px,-15px)  ;
+   }
+   30% {
+     transform:  translate(-1px,0px)  ;
+   }
+   45% {
+     transform:  translate(-1px,-10px)  ;
+   }
+   60% {
+     transform:  translate(-1px,0px)  ;
+   }
+   75% {
+     transform:  translate(-1px,-5px)  ;
+   }
+   100% {
+     transform:  translate(-1px,0px)  ;
+   }
+ }

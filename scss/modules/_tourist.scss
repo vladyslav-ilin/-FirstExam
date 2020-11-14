@@ -1,0 +1,41 @@
+.tourist {
+   background: url("../images/travel.jpg") no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+   }
+   &__content {
+      display: flex;
+   }
+   &__title {
+      font: 400 36px $font-title;
+      margin-bottom: 100px;
+      text-align: center;
+   }
+   &__item {
+      flex-basis: 445px;
+   }
+   &__info {
+      padding: 45px 55px;
+      background: #333333;
+      flex-grow: 1;
+   }
+   &__name {
+      text-transform: uppercase;
+      font-size: 26px;
+      margin-bottom: 30px;
+   }
+   &__text {
+      line-height: 26px;
+   }
+   &__icon-quote {
+      color: #5474fd;
+      position: relative;
+      top: -10px;
+      margin-right: 10px;
+   }
+}

@@ -1,0 +1,29 @@
+.button {
+   @include size(225px, 60px);
+   color: var(--color);
+   text-transform: uppercase;
+   font: 400 16px/60px $font-title;
+   letter-spacing: 1.2px;
+   text-decoration: none;
+   background: var(--bgr);
+   display: inline-block;
+   text-align: center;
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+   &:hover{
+      &::before{
+         width: calc(100% + 55px);
+      }
+      
+   }
+   &::before {
+      @include size(110px, 100%);
+      @include pos(absolute, $l: 0, $z:-1);
+      content: '';
+      border-bottom: 60px solid #496bfe;
+      border-left: 55px solid #496bfe;
+      border-right: 55px solid transparent;
+      transition: all .7s ease;
+   }
+}

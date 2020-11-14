@@ -1,0 +1,32 @@
+.choose{
+   background: url('../images/choose.jpg') no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+   &__wrapper{
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   &__item{
+      float: right;
+      &--left{
+         margin: 0 125px 5px 0;
+      }
+   }
+   &__title{
+      color: #fff;
+      font: 400 36px $font-title;
+      &--choose{
+         margin-bottom: 50px;
+      }
+   }
+   &__text{
+      line-height: 26px;
+      margin-bottom: 45px;
+      &--choose{
+         margin-bottom: 30px;
+      }
+   }
+
+}

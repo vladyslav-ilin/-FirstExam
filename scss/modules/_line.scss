@@ -1,0 +1,51 @@
+.line{
+   padding: 100px 0 115px;
+   background: #333333;
+   &__wrapper{
+      display: flex;
+      justify-content: space-around;
+   }
+   &__item{
+      text-align: center;
+      &:hover{
+         .line__icon{
+            color: #000;
+         }
+      }
+      &--dots{
+         position: relative;
+         &::before,
+         &::after{
+            @include size(312px, 60px);
+            content: '';
+            background: url('../images/dots.png') no-repeat;
+            background-size: cover;
+
+         }
+         &::before{
+            @include pos(absolute, $t: -60px, $l:-235px);
+         }
+         &::after{
+            @include pos(absolute, $t: -60px, $r:-235px);
+         }
+      }
+   }
+   &__text{
+      font: 400 36px $font-title;
+   }
+   &__icon{
+      font-size: 60px;  
+      margin-bottom: 30px;
+      display: inline-block;
+      transition: all .3s ease;
+      &--search{
+         color: #5474fd;
+      }
+      &--check{
+         color: #ff6363;
+      }
+      &--like{
+         color: #00a2ff;
+      }
+   }
+}

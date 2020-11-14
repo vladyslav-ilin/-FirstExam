@@ -1,0 +1,33 @@
+.footer{
+   padding: 115px 0 45px 0;
+   background: #232323;
+   text-align: center;
+   color: #fff;
+   &__title{
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: 3.36px;
+   }
+   &__text{
+      margin-bottom: 30px;
+   }
+   &__list{
+      display: flex;
+      justify-content: center;
+   }
+   &__item{
+      margin: 0 12px;
+   }
+   &__link{
+      text-decoration: none;
+      color: currentColor;
+      transition: all .3s ease;
+      display: inline-block;
+      &:hover{
+         transform: scale(1.2);
+         color: var(--bgr);
+      }
+   }
+}
